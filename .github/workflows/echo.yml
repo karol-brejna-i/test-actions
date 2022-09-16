@@ -9,10 +9,18 @@ jobs:
   label_issue:
     runs-on: ubuntu-latest
     steps:
-      - env:
+      - name:
+          Get Project metadata
+        env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           ISSUE_URL: ${{ github.event.issue.html_url }}
         run: |
           gh issue edit $ISSUE_URL --add-label "triage"
           echo "poszlo"
-          curl -s 'https://api.github.com/repos/Fun-with-Garmin-Development/awesome-connect-iq?page=0&per_page=1' | jq "{forks_count, open_issues, stargazers_count, watchers_count, license, updated_at}"
+
+      - name:
+          Do something
+ 
+        run: |
+          echo "koniec"
+
