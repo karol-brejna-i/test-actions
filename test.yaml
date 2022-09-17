@@ -51,13 +51,6 @@ body:
     - label: I have searched the existing issues
       required: true
 
-  # Repo URL	...
-  # Project type	Audio Content Provider/Data Field/Device App/Widget/Watch Face/Collection
-  # License	license type/no info
-  # Connect IQ Store URL	url, if it is available in the store
-  # Does it run in the simulator?	Yes/no. Which device?
-  # Does it run on a device?	Yes/no. Which device?
-  # Good readme/docs	yes/no/short comment
-  # "Clean code"	yes/no/short comment
+
 
 
