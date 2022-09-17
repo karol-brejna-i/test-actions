@@ -1,7 +1,7 @@
-name: Bug Report
+name: Include/don't include a project
 description: Provide information about a project to be added to awesome-connect-iq list or a project that shouldn't be included.
 title: "Project proposal: "
-labels: ["triage"]
+labels: ["needs triage"]
 body:
 - type: markdown
   attributes:
@@ -91,13 +91,19 @@ body:
 - type: input
   id: device 
   attributes:
-    label: ested in simulator?
+    label: Tested on acgual device?
     description: Does it run on a device?	Yes/no. Which device?
     placeholder: "Fenix 5"
   validations:
     required: false
-       
-  # Does it run in the simulator?	Yes/no. Which device?
-  # Does it run on a device?	Yes/no. Which device?
-  # Good readme/docs	yes/no/short comment
-  # "Clean code"	yes/no/short comment
+
+- type: checkboxes
+  id: sourcecode
+  attributes:
+    label: Quality of the code?
+    description: You may select more than one.
+    options:
+      - label: Clean code
+      - label: Good README/docs
+
+  
