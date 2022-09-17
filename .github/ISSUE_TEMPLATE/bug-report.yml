@@ -24,3 +24,12 @@ body:
   attributes:
     value: |
       ## Include some summary, why the project should be accepted/rejected. 
+- type: textarea
+  id: summary
+  attributes:
+    label: Justification
+    description: Include some summary, why the project should be accepted/rejected.
+    placeholder: Tell us what you think!
+    value: "..."
+  validations:
+    required: true

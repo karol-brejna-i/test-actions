@@ -13,16 +13,6 @@ body:
         The latter has its own issue type. <<TODO: Add link>>
 
         https://github.com/karol-brejna-i/awesome-connect-iq/issues/new/choose
-  # - type: dropdown
-  #   id: decision
-  #   attributes:
-  #     label: Decision
-  #     description: Is this PR for including a project in the list, or not including the project?
-  #     options:
-  #       - Include
-  #       - Do not include
-  #   validations:
-  #     required: true
 
   
   # - type: textarea
@@ -34,6 +24,7 @@ body:
   #     value: "..."
   #   validations:
   #     required: true
+  
   # - type: markdown
   #   attributes:
   #     value: |
