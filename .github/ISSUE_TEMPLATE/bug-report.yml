@@ -77,7 +77,7 @@ body:
   attributes:
     label: Connect IQ Store URL
     description: "If the project (app/watch face, etc.) is published in the app store, provide a link."
-    placeholder: "..."
+    placeholder: "https://apps.garmin.com/en-US/"
 
 
 - type: input
