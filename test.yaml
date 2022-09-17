@@ -1,0 +1,62 @@
+name: Bug Report
+description: Provide information about a project to be added to awesome-connect-iq list or a project that shouldn't be included.
+title: "Project proposal: "
+labels: ["triage"]
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Provide information about a project to be added to awesome-connect-iq list or a project that shouldn't be included.
+
+        Please, note, that this issue type is about a project (Watch App, Widget, etc.), not learning materials (tutorial, video, etc.).
+        The latter has its own issue type. <<TODO: Add link>>
+  # - type: dropdown
+  #   id: decision
+  #   attributes:
+  #     label: Decision
+  #     description: Is this PR for including a project in the list, or not including the project?
+  #     options:
+  #       - Include
+  #       - Do not include
+  #   validations:
+  #     required: true
+  # - type: textarea
+  #   id: summary
+  #   attributes:
+  #     label: Justification
+  #     description: Include some summary, why the project should be accepted/rejected.
+  #     placeholder: Tell us what you think!
+  #     value: "..."
+  #   validations:
+  #     required: true
+  # - type: markdown
+  #   attributes:
+  #     value: |
+  #       ## Information about the project
+  # - type: dropdown
+  #   id: license
+  #   attributes:
+  #     label: What is the project license?
+  #     multiple: false
+  #     options:
+  #       - Apache-2.0
+  #       - MIT
+  #       - Some
+  #       - Other (describe in "Jaustification")
+  #       - None
+  #       - Unknown
+  # - type: textarea
+  #   id: logs
+  #   attributes:
+  #     label: Relevant log output
+  #     description: Please copy and paste any relevant log output. This will be automatically formatted into code, so no need for backticks.
+  #     render: shell
+  # - type: checkboxes
+  #   id: terms
+  #   attributes:
+  #     label: Code of Conduct
+  #     description: By submitting this issue, you agree to follow our [Code of Conduct](https://example.com)
+  #     options:
+  #       - label: I agree to follow this project's Code of Conduct
+  #         required: true
