@@ -24,11 +24,8 @@ body:
   #     value: "..."
   #   validations:
   #     required: true
-  
-  # - type: markdown
-  #   attributes:
-  #     value: |
-  #       ## Information about the project
+
+
   # - type: dropdown
   #   id: license
   #   attributes:

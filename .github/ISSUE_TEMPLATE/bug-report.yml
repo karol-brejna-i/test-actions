@@ -9,7 +9,8 @@ body:
       Provide information about a project to be added to awesome-connect-iq list or a project that shouldn't be included.
 
       Please, note, that this issue type is about a project (Watch App, Widget, etc.), not learning materials (tutorial, video, etc.).
-      The latter has its own issue type. <<TODO: Add link>>     
+      The latter has its own issue type. <<TODO: Add link>>      https://github.com/karol-brejna-i/awesome-connect-iq/issues/new/choose
+ 
 - type: dropdown
   id: decision
   attributes:
@@ -20,10 +21,6 @@ body:
       - Do not include
   validations:
     required: true
-- type: markdown
-  attributes:
-    value: |
-      ## Include some summary, why the project should be accepted/rejected. 
 - type: textarea
   id: summary
   attributes:
@@ -33,3 +30,7 @@ body:
     value: "..."
   validations:
     required: true
+- type: markdown
+  attributes:
+    value: |
+      ## Information about the project
