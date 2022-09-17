@@ -1,6 +1,6 @@
 name: Include/don't include a project
 description: Provide information about a project to be added to awesome-connect-iq list or a project that shouldn't be included.
-title: "Project proposal: "
+title: "Project proposal: ..."
 labels: ["needs triage"]
 body:
 - type: markdown
@@ -83,7 +83,7 @@ body:
 - type: input
   id: simulator 
   attributes:
-    label: Tested in simulator?
+    label: Tested in the simulator?
     description: "Does it run in the simulator?	Yes/no. Which device?"
     placeholder: "Fenix 5"
   validations:
@@ -91,7 +91,7 @@ body:
 - type: input
   id: device 
   attributes:
-    label: Tested on acgual device?
+    label: Tested on an actual device?
     description: Does it run on a device?	Yes/no. Which device?
     placeholder: "Fenix 5"
   validations:
@@ -106,4 +106,21 @@ body:
       - label: Clean code
       - label: Good README/docs
 
-  
+- type: textarea
+  id: description
+  attributes:
+    label: Description of the project
+    description: What does it actually do? What are the key learnings from analyzing the project (programming techniques/mechanics).
+    placeholder: Tell us what you think!
+    value: "..."
+  validations:
+    required: true
+
+- type: textarea
+  id: additional
+  attributes:
+    label: Additional info
+    description: Include some summary, why the project should be accepted/rejected.
+    placeholder: Tell us what you think!
+    value: "..."
+
