@@ -10,3 +10,10 @@ body:
     options:
     - label: I have searched the existing issues
       required: true
+- type: markdown
+  attributes:
+    value: |
+      Provide information about a project to be added to awesome-connect-iq list or a project that shouldn't be included.
+
+      Please, note, that this issue type is about a project (Watch App, Widget, etc.), not learning materials (tutorial, video, etc.).
+      The latter has its own issue type. <<TODO: Add link>>      
