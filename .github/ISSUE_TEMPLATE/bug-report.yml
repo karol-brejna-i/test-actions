@@ -1,7 +1,7 @@
 name: Bug Report
 description: Provide information about a project to be added to awesome-connect-iq list or a project that shouldn't be included.
 title: "Project proposal: "
-labels: ["proposal", "triage"]
+labels: ["triage"]
 
 body:
   - type: markdown
