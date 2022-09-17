@@ -19,5 +19,8 @@ body:
       - Include
       - Do not include
   validations:
-    required: true      
- 
+    required: true
+- type: markdown
+  attributes:
+    value: |
+      ## Include some summary, why the project should be accepted/rejected. 
