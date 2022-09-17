@@ -41,13 +41,27 @@ body:
 - type: input
   id: projectUrl
   attributes:
-    label: Bug prevalence
-    description: "How often do you or others encounter this bug?"
-    placeholder: "Example: Whenever I visit the personal account page (1-2 times a week)"
+    label: Repo URL
+    description: "Provide valid URL of the project's repository"
+    placeholder: "..."
   validations:
-    required: true      
+    required: true   
+
 - type: dropdown
   id: license
+  attributes:
+    label: What is the project license?
+    multiple: true
+    options:
+      - Watch Face
+      - Device App
+      - Data Field
+      - Widget
+      - Audio Content Provider
+      - Collection
+
+- type: dropdown
+  id: projectType
   attributes:
     label: What is the project license?
     multiple: false
@@ -57,10 +71,33 @@ body:
       - Some
       - Other (describe in "Jaustification")
       - Unknown
-  # Repo URL	...
-  # Project type	Audio Content Provider/Data Field/Device App/Widget/Watch Face/Collection
-  # License	license type/no info
-  # Connect IQ Store URL	url, if it is available in the store
+      
+- type: input
+  id: appstoreUrl
+  attributes:
+    label: Connect IQ Store URL
+    description: "If the project (app/watch face, etc.) is published in the app store, provide a link."
+    placeholder: "..."
+  validations:
+    required: true   
+
+- type: input
+  id: simulator 
+  attributes:
+    label: Tested in simulator?
+    description: "Does it run in the simulator?	Yes/no. Which device?"
+    placeholder: "Fenix 5"
+  validations:
+    required: false
+- type: input
+  id: device 
+  attributes:
+    label: ested in simulator?
+    description: Does it run on a device?	Yes/no. Which device?
+    placeholder: "Fenix 5"
+  validations:
+    required: false
+       
   # Does it run in the simulator?	Yes/no. Which device?
   # Does it run on a device?	Yes/no. Which device?
   # Good readme/docs	yes/no/short comment
