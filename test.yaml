@@ -26,18 +26,7 @@ body:
   #     required: true
 
 
-  # - type: dropdown
-  #   id: license
-  #   attributes:
-  #     label: What is the project license?
-  #     multiple: false
-  #     options:
-  #       - Apache-2.0
-  #       - MIT
-  #       - Some
-  #       - Other (describe in "Jaustification")
-  #       - None
-  #       - Unknown
+
   # - type: textarea
   #   id: logs
   #   attributes:
