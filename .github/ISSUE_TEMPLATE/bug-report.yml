@@ -30,9 +30,9 @@ body:
       label: Justification
       description: Include some summary, why the project should be accepted/rejected.
       placeholder: Tell us what you think!
-      value: "..."
     validations:
       required: true
+
   - type: markdown
     attributes:
       value: |
