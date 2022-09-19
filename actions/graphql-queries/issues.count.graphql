@@ -1,0 +1,13 @@
+query ($owner: String!, $name: String!) {
+  repository(owner: $owner, name: $name) {
+    issues {
+      totalCount
+    }
+    open: issues(states: OPEN) {
+      totalCount
+    }
+    closed: issues(states: CLOSED) {
+      totalCount
+    }
+  }
+}
