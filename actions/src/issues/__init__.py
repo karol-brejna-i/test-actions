@@ -18,6 +18,6 @@ class Issue:
 
     def __str__(self):
         return f"Decision: '{self.decision}', Summary: '{self.summary}', Project URL: '{self.project_url}', " \
-               f"Project Type: '{self.projectType}', License: '{self.license}', Appstore URL: '{self.appstore_url}', " \
+               f"Project Type: '{self.project_type}', License: '{self.license}', Appstore URL: '{self.appstore_url}', " \
                f"Simulator: '{self.simulator}', Device: '{self.device}', Sourcecode: '{self.sourcecode}', " \
                f"Description: '{self.description}', Additional: '{self.additional}'"

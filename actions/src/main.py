@@ -21,7 +21,7 @@ def test_appstore_extract():
 
 def test_data_from_github_context():
     # obtain the json file with GITHUB_CONTEXT
-    data = readJsonFromFile(GIHUB_CONTEXT_FILE)  # for development purpposes, read it from a file
+    data = readJsonFromFile(GIHUB_CONTEXT_FILE)  # for development purposes, read it from a file
 
     # get issue body
     md = IssueParser.clear_markdown(data["event"]["issue"]["body"])
@@ -38,13 +38,15 @@ def test_data_from_github_context():
     print('-------------')
     print(issue)
 
+def test_issue_validator():
+    t = IssueValidator(Issue())
+    print(t.validateUrl("https://apps.garmin.com/en-US/apps/11c2548e-8878-497f-809b-ea640e54ca43#0"))
 
 def main():
-    # test_data_from_github_context()
+    test_data_from_github_context()
     # test_appstore_extract()
+    # test_issue_validator()
 
-    t = IssueValidator(Issue())
-    print(t.validateUrl("httsps://apps.garmin.com/en-US/apps/11c2548e-8878-497f-809b-ea640e54ca43#0"))
 
 
 if __name__ == '__main__':
