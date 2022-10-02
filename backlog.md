@@ -1,5 +1,5 @@
 
-[Badminton Score Tracker](https://apps.garmin.com/pl-PL/apps/51606451-57e2-4f99-9420-2ba5a80b5df6) [GitHub - matco/badminton at dev](https://github.com/matco/badminton/tree/dev.) May be good. Quite fresh. "- "Save matches as Garmin Connect activities" - could be good example for saving custom activities.
+[Badminton Score Tracker](https://apps.garmin.com/pl-PL/apps/51606451-57e2-4f99-9420-2ba5a80b5df6) [GitHub - matco/badminton at dev](https://github.com/matco/badminton/tree/dev.) May be good. Quite fresh. "- "Save matches as Garmin Connect activities" - could be good example for saving custom activities.  
 
 [GitHub - rgibert/garmin-podcasts: Garmin Podcasts is a Garmin Connect IQ podcast app powered by Podcast Index. No external service or subscription required: all you need is you watch!](https://github.com/rgibert/garmin-podcasts) 
 An example of audio content provider app. Look very solid. Good user's docs.
