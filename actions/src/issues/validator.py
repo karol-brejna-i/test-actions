@@ -1,3 +1,5 @@
+import validators as validators
+
 from issues import Issue
 
 
@@ -6,7 +8,7 @@ class IssueValidator:
         self.issue = issue
 
     def validateUrl(self, url):
-        pass
+        return validators.url(url)
 
     def validate(self):
         pass

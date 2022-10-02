@@ -1,0 +1,18 @@
+query ($owner: String!, $name: String!) {
+  repository(owner: $owner, name: $name) {
+    defaultBranchRef {
+      target {
+        ... on Commit {
+          history(first: 1) {
+            nodes {
+              pushedDate
+            }
+          }
+        }
+      }
+    }
+    pushedAt
+    isArchived
+  }
+}
+#{ "owner": "Fun-with-Garmin-Development", "name": "awesome-connect-iq" }

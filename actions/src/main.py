@@ -1,5 +1,7 @@
+from additional_info.appstoreextract import AppStoreExtractor
+from issues import Issue
 from issues.parser import IssueParser
-from utils.appstoreextract import AppStoreExtractor
+from issues.validator import IssueValidator
 from utils.jsonutils import readJsonFromFile
 
 # update the path for tests
@@ -39,7 +41,10 @@ def test_data_from_github_context():
 
 def main():
     # test_data_from_github_context()
-    test_appstore_extract()
+    # test_appstore_extract()
+
+    t = IssueValidator(Issue())
+    print(t.validateUrl("httsps://apps.garmin.com/en-US/apps/11c2548e-8878-497f-809b-ea640e54ca43#0"))
 
 
 if __name__ == '__main__':

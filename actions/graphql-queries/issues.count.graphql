@@ -11,3 +11,4 @@ query ($owner: String!, $name: String!) {
     }
   }
 }
+#{ "owner": "Fun-with-Garmin-Development", "name": "awesome-connect-iq" }

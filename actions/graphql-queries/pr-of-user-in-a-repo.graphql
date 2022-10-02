@@ -1,0 +1,20 @@
+# CANNOT FIND A WAY TO GET THIS ONE TO WORK: GET PRs of a user in a given repo -- in one go. 
+# Right now I'll go for getting the repo PRs and then filtering the user PRs from that list.
+{
+  search(first: 100, type: ISSUE, query: "user:karol-brejna-i repo:awesome-connect-iq assignee:danieldahan commenter:danieldahan state:open") {
+    issueCount
+    pageInfo {
+      hasNextPage
+      endCursor
+    }
+    edges {
+      node {
+        ... on Issue {
+          createdAt
+          title
+          url
+        }
+      }
+    }
+  }
+}

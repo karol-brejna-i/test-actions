@@ -1,7 +1,25 @@
 query ($owner: String!, $name: String!) {
   repository(owner: $owner, name: $name) {
-
+    issues {
+      totalCount
+    }
+    openIssues: issues(states: OPEN) {
+      totalCount
+    }
+    closedIssues: issues(states: CLOSED) {
+      totalCount
+    }
+    
+    
     pullRequests {
+      totalCount
+    }
+    
+    openPRs:pullRequests(states:OPEN) {
+      totalCount
+    }
+    
+    closedPRs:pullRequests(states:[CLOSED, MERGED]) {
       totalCount
     }
   }
