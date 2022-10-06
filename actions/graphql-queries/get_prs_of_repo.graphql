@@ -1,0 +1,26 @@
+query ($owner: String!, $name: String!, $max_cnt:Int) {
+  repository(owner: $owner, name: $name) {
+    unusedPRs: pullRequests(last: $max_cnt, states: [CLOSED, OPEN]) {
+      nodes {
+        author {
+          login
+        }
+        # number
+        state
+        # merged
+      }
+      totalCount
+    }
+    mergedPRs: pullRequests(last: $max_cnt,  states: [MERGED]) {
+      nodes {
+        author {
+          login
+        }
+        # number
+        state
+        # merged
+      }
+      totalCount
+    }
+  }
+}

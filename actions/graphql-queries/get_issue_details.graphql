@@ -1,0 +1,12 @@
+query ($owner: String!, $name: String!, $number_id: Int!) {
+  repository(owner: $owner, name: $name) {
+    openGraphImageUrl
+    issue(number: $number_id) {
+      id
+      body
+      bodyHTML
+      title
+    }
+  }
+}
+#{ "owner": "karol-brejna-i", "name": "awesome-connect-iq" }
