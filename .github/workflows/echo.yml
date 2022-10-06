@@ -1,4 +1,4 @@
-name: echo-workflow
+name: v-workflow
 
 on:
   issues:
@@ -17,22 +17,7 @@ jobs:
         run: |
           gh issue edit $ISSUE_URL --add-label "triage"
           echo "poszlo"
-
       - name:
           Do something
         run: |
           echo "koniec"
-
-  echoer:
-      runs-on: ubuntu-latest
-      steps:
-        - name: Dump GitHub context
-          env:
-            GITHUB_CONTEXT: ${{ toJson(github) }}
-          run: |
-            echo "$GITHUB_CONTEXT"
-        - name: issue
-          env:
-            GITHUB_CONTEXT: ${{ toJson(github.event.issue) }}
-          run: |
-            echo "$GITHUB_CONTEXT"            
