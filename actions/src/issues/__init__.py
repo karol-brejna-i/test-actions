@@ -1,9 +1,12 @@
+from typing import List
+
+
 class Issue:
 
     def __init__(self, decision: str = None, summary: str = None, project_url: str = None,
-                 project_type: list[str] = None,
+                 project_type: List[str] = None,
                  license=None, appstore_url=None, simulator: str = None, device: str = None,
-                 sourcecode: list[str] = None, description: str = None, additional: str = None) -> None:
+                 sourcecode: List[str] = None, description: str = None, additional: str = None) -> None:
         self.decision = decision
         self.summary = summary
         self.project_url = project_url

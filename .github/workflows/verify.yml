@@ -9,12 +9,58 @@ jobs:
   verifier:
     runs-on: ubuntu-latest
     steps:
-      - name: alla
+      - name: Checkout verification code
+        uses: actions/checkout@v3
+      - name: Dump GitHub context
         env:
-          GITHUB_CONTEXT: ${{ toJson(github.event.issue) }}
+          GITHUB_CONTEXT: ${{ toJson(github) }}
         run: |
-          ls -la
-    - name:
-        Do something
-      run: |
-        echo "the end"
+          echo "$GITHUB_CONTEXT"
+      - name: Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+          cache: 'pip' # caching pip dependencies
+      - name: a1
+        working-directory: ./actions/src
+        run: |
+          python --version && pip install -r ../requirements.txt && ls -la
+      - name: a2
+        id: a2
+        working-directory: ./actions/src
+        env:
+          GITHUB_CONTEXT: ${{ toJson(github) }}
+        run: |
+          ls -la && python main.py
+      - name: a3
+        working-directory: ./actions/src
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          ISSUE_URL: ${{ github.event.issue.html_url }}
+        run: |
+          echo '${{ steps.a2.outputs.result }}'
+          success=$(echo '${{ steps.a2.outputs.result }}' | jq .success)
+          if [[ "$success" != "true" ]]; then
+            echo "Jest źle!"
+            messages=$(echo '${{ steps.a2.outputs.result }}' | jq .messages)
+            gh issue edit $ISSUE_URL --add-label "triage"
+            gh issue comment $ISSUE_URL --body "Validation failed!\n $messages"
+          else
+            echo "Jest dobrze."
+          fi
+      - name: a4
+        working-directory: ./actions/src
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          ISSUE_URL: ${{ github.event.issue.html_url }}
+          COMMENTS_URL: ${{ github.event.issue.comments_url }}
+        run: |
+          curl \
+            -X POST \
+            -H "Accept: application/vnd.github+json" \
+            -H "Authorization: Bearer $GITHUB_TOKEN" \
+            $COMMENTS_URL \
+            -d '{"body":"Me too!\nadfsf\n#h3 dasdfasf \n adffdds"}'
+
+
+

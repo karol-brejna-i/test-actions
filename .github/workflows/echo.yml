@@ -1,4 +1,4 @@
-name: v-workflow
+name: echo-workflow
 
 on:
   issues:

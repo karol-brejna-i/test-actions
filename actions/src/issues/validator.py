@@ -1,8 +1,8 @@
 import requests
 import validators as validators
-
 from issues import Issue
 from issues.parser import FIELDS_MAPPING
+from typing import List, Tuple
 
 HEADERS = ({
     'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/44.0.2403.157 Safari/537.36',
@@ -49,7 +49,7 @@ class IssueValidator:
         result: bool = self.issue.simulator is not None or self.issue.device is not None
         return result
 
-    def validate_required_fields(self) -> tuple[bool, list[str]]:
+    def validate_required_fields(self) -> Tuple[bool, List[str]]:
         """
         Check if all required fields are filled
         :param issue:
