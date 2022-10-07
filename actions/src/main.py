@@ -14,7 +14,6 @@ def validate(github_context_json) -> str:
         # context not given, read from env variables
         github_context_json = os.getenv('GITHUB_CONTEXT')
 
-
     result = {"success": False, "messages": []}
 
     if github_context_json:
@@ -33,7 +32,7 @@ def validate(github_context_json) -> str:
             if validation_messages:
                 result = {"success": False, "messages": validation_messages}
         else:
-            result = {"success": False, "messages": "No issue body."}
+            result = {"success": False, "messages": ["No issue body."]}
 
     else:
         result = {"success": False, "messages": ["No GITHUB_CONTEXT!"]}
@@ -45,4 +44,3 @@ def validate(github_context_json) -> str:
 
 if __name__ == '__main__':
     validate()
-
