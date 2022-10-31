@@ -6,6 +6,7 @@ FIELDS_MAPPING = {
     "Decision": "decision",
     "Justification": "summary",
     "Repo URL": "project_url",
+    "Alternative project name": "project_name",
     "What is the project type?": "project_type",
     "What is the project license?": "license",
     "Connect IQ Store URL": "appstore_url",
@@ -19,6 +20,7 @@ FIELDS_TYPES = {
     "Decision": "input",  # single text value
     "Justification": "input",
     "Repo URL": "input",
+    "Alternative project name": "input",
     "What is the project type?": "multiple",  # multiple values, delimited by comma
     "What is the project license?": "radio",  # single value
     "Connect IQ Store URL": "input",
@@ -29,6 +31,7 @@ FIELDS_TYPES = {
     "Additional info": "input"
 }
 KNOWN_HEADERS = ["### Decision", "### Justification", "### Repo URL", "### What is the project type?",
+                 "### Alternative project name",
                  "### What is the project license?", "### Connect IQ Store URL",
                  "### Tested in the simulator?", "### Tested on an actual device?", "### Quality of the code?",
                  "### Description of the project", "### Additional info"]
@@ -120,7 +123,7 @@ class IssueParser:
                 key = l[4:]
                 mapping = FIELDS_MAPPING[key]
                 field_type = FIELDS_TYPES[key]
-                # print(f"processing: '{key}' (mapped to '{mapping}' of type '{field_type}'")
+                # print(f"processing: '{key}' (mapped to '{mapping}' of type '{field_type}')")
                 body = IssueParser.extract_body(q)
                 value = IssueParser.parse_body(body, field_type)
                 if value:

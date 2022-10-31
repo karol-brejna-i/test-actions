@@ -1,13 +1,13 @@
 name: Include/don't include a project
 description: Provide information about a project to be added to awesome-connect-iq list or a project that shouldn't be included.
-title: "Project proposal: ..."
+title: "Project proposal: <<please, update the title>>"
 labels: ["needs triage"]
 body:
   - type: markdown
     attributes:
       value: |
-        Please, note, that this issue type is about a project (Watch App, Widget, etc.), not learning materials (tutorial, video, etc.).
-        The latter has its own issue type. <<TODO: Add link>>  
+        Please, note, that this issue type is about a project repository (Watch App, Widget, etc.), not learning materials (tutorial, video, etc.).
+        The latter has its own issue type. <<TODO: Add link>>
   - type: markdown
     attributes:
       value: |
@@ -46,6 +46,16 @@ body:
       placeholder: "..."
     validations:
       required: true
+  - type: input
+    id: projectName
+    attributes:
+      label: Alternative project name
+      description: |
+        Provide the name under which the project should be listed.
+        For GitHub project, please try to use the name that is in "_organization_/_repository_" format, if possible.
+      placeholder: "..."
+    validations:
+      required: true
 
   - type: dropdown
     id: projectType
@@ -72,7 +82,7 @@ body:
         - Apache-2.0
         - MIT
         - Some
-        - Other (describe in "Jaustification")
+        - Other (describe in "Justification")
         - Unknown
 
   - type: input

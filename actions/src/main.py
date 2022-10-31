@@ -29,8 +29,11 @@ def validate(github_context_json) -> str:
 
             t = IssueValidator(issue)
             validation_messages = t.validate()
-            if validation_messages:
+            if validation_messages and validation_messages.length > 0:
                 result = {"success": False, "messages": validation_messages}
+            else:
+                result = {"success": True, "messages": []}
+
         else:
             result = {"success": False, "messages": ["No issue body."]}
 
