@@ -11,6 +11,7 @@ What we can validate:
 - Was a known device entered?
 - Is required info entered (for example, the project should be tested in the simulator or on a device)
 - Is declared license the same as defined in the project settings
+- Does the description contain some unwanted tags (injections)
 
 Some information can be added to the issue (for example in a form of a comment):
 

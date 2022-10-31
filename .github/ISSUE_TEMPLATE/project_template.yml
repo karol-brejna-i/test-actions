@@ -7,7 +7,7 @@ body:
     attributes:
       value: |
         Please, note, that this issue type is about a project (Watch App, Widget, etc.), not learning materials (tutorial, video, etc.).
-        The latter has its own issue type. <<TODO: Add link>>  
+        The latter has its own issue type. <<TODO: Add link>>
   - type: markdown
     attributes:
       value: |
@@ -72,7 +72,7 @@ body:
         - Apache-2.0
         - MIT
         - Some
-        - Other (describe in "Jaustification")
+        - Other (describe in "Justification")
         - Unknown
 
   - type: input

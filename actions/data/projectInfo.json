@@ -1,0 +1,30 @@
+{
+  "entryType": "project",
+  "name": "fhhf fight",
+  "URL": "https://google.com",
+  "description": "",
+  "category": ["watchface"],
+  "submission": {
+    "createdAt": "",
+    "createdBy": "",
+    "decision": "accept"
+    "justification": "",
+    "originalEntry": {}
+  },
+  "repoMetadata": {
+    "lastUpdatedAt": "",
+    "forks": 0,
+    "stars": 0,
+    "watchers": 0
+  },
+  "storeMetadata": {
+    "URL": "https://google.com",
+    "lastUpdatedAt": "",
+    "downloadsCnt": 0,
+    "rating": 4.5,
+    "votes": 100,
+    "category": "watch face"
+  },
+  "tags": ["xx"]
+
+}
