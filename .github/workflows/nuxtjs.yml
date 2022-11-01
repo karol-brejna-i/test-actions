@@ -74,7 +74,7 @@ jobs:
         env:
           GHW: ${{ github.workspace }}
         run: |
-          pwd && ls -la
+          pwd && ls -la && cat nuxt.config.js
 
       - name: Setup Pages
         uses: actions/configure-pages@v2
@@ -84,6 +84,12 @@ jobs:
           #
           # You may remove this line if you want to manage the configuration yourself.
           static_site_generator: nuxt
+
+      - name: n2
+        env:
+          GHW: ${{ github.workspace }}
+        run: |
+          pwd && ls -la && cat nuxt.config.js
 
       # - name: Restore cache
       #   uses: actions/cache@v3
@@ -106,10 +112,7 @@ jobs:
         working-directory: "webapp/awesomer"
 
       - name: d2
-        env:
-          GHW: ${{ github.workspace }}
-        run: |
-          pwd && ls dist
+        run: pwd && ls dist
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
