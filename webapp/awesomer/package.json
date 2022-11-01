@@ -18,6 +18,7 @@
     "nuxt": "^2.15.8",
     "view-design": "^4.7.0",
     "vue": "^2.7.10",
+    "vue-good-table": "^2.21.11",
     "vue-server-renderer": "^2.7.10",
     "vue-template-compiler": "^2.7.10"
   },

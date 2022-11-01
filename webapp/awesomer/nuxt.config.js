@@ -25,7 +25,10 @@ export default {
     css: ['view-design/dist/styles/iview.css'],
 
     // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-    plugins: ['@/plugins/view-ui'],
+    plugins: [
+        '@/plugins/view-ui',
+        { src: '~/plugins/vue-good-table', ssr: false }
+    ],
 
     // Auto import components: https://go.nuxtjs.dev/config-components
     components: true,
