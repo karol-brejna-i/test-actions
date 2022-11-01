@@ -23,9 +23,9 @@ concurrency:
   group: "pages"
   cancel-in-progress: true
 
-# defaults:
-#   run:
-#     working-directory: "webapp/awesomer"
+defaults:
+  run:
+    working-directory: "webapp/awesomer"
 
 jobs:
   # Build job
@@ -50,11 +50,11 @@ jobs:
       - name: Detect package manager
         id: detect-package-manager
         run: |
-          if [ -f "${{ github.workspace }}/webapp/awesomer/yarn.lock" ]; then
+          if [ -f "yarn.lock" ]; then
             echo "::set-output name=manager::yarn"
             echo "::set-output name=command::install"
             exit 0
-          elif [ -f "${{ github.workspace }}/webapp/awesomer/package.json" ]; then
+          elif [ -f "package.json" ]; then
             echo "::set-output name=manager::npm"
             echo "::set-output name=command::ci"
             exit 0
@@ -69,12 +69,13 @@ jobs:
           node-version: "16"
           cache: ${{ steps.detect-package-manager.outputs.manager }}
           cache-dependency-path: "webapp/awesomer"
+          working-directory: "webapp/awesomer"
 
       - name: n1
         env:
           GHW: ${{ github.workspace }}
         run: |
-          pwd && ls -la && npm list nuxt
+          pwd && ls -la
 
       - name: Setup Pages
         uses: actions/configure-pages@v2
@@ -102,13 +103,7 @@ jobs:
         env:
           GHW: ${{ github.workspace }}
         run: |
-          pwd && ls -la && echo "$GHW"
-
-      - name: d3
-        env:
-          GHW: ${{ github.workspace }}
-        run: |
-          ls webapp/awesomer
+          pwd && ls -la && ls $GHW
 
       - name: Static HTML export with Nuxt
         run: ${{ steps.detect-package-manager.outputs.manager }} run generate
@@ -118,7 +113,7 @@ jobs:
         env:
           GHW: ${{ github.workspace }}
         run: |
-          pwd && ls -la && echo "$GHW"
+          pwd && ls -la && ls $GHW
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
