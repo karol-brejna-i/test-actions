@@ -109,13 +109,13 @@ jobs:
         env:
           GHW: ${{ github.workspace }}
         run: |
-          pwd && ls -la && ls dist
+          pwd && ls dist
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         # working-directory: "webapp/awesomer"
         with:
-          path: ./dist
+          path: webapp/awesomer/dist
 
 
 
