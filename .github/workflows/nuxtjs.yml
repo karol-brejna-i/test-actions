@@ -79,11 +79,11 @@ jobs:
       - name: Setup Pages
         uses: actions/configure-pages@v2
         with:
-          # Automatically inject router.base in your Nuxt configuration file and set
-          # target to static (https://nuxtjs.org/docs/configuration-glossary/configuration-target/).
-          #
-          # You may remove this line if you want to manage the configuration yourself.
+          # NOTE: by default, this little jerk works in GITHUB_WORKSPACE directory and does not take into account working-directory setting.
+          # If you nuxt project is in different directory (subdirectory), it will end up with creating a new blank config in GITHUB_WORKSPACE...
+          # You need to use configurationFile parameter
           static_site_generator: nuxt
+          configurationFile: ./webapp/awesomer/nuxt.config.js
 
       - name: n2
         env:
@@ -122,7 +122,6 @@ jobs:
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
-        # working-directory: "webapp/awesomer"
         with:
           path: webapp/awesomer/dist
 
