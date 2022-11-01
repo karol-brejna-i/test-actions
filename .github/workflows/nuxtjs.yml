@@ -69,7 +69,6 @@ jobs:
           node-version: "16"
           cache: ${{ steps.detect-package-manager.outputs.manager }}
           cache-dependency-path: "webapp/awesomer"
-          working-directory: "webapp/awesomer"
 
       - name: n1
         env:
@@ -86,34 +85,31 @@ jobs:
           # You may remove this line if you want to manage the configuration yourself.
           static_site_generator: nuxt
 
-      - name: Restore cache
-        uses: actions/cache@v3
-        with:
-          path: |
-            dist
-            .nuxt
-          key: ${{ runner.os }}-nuxt-build-${{ hashFiles('dist') }}
-          restore-keys: |
-            ${{ runner.os }}-nuxt-build-
+      # - name: Restore cache
+      #   uses: actions/cache@v3
+      #   with:
+      #     path: |
+      #       dist
+      #       .nuxt
+      #     key: ${{ runner.os }}-nuxt-build-${{ hashFiles('dist') }}
+      #     restore-keys: |
+      #       ${{ runner.os }}-nuxt-build-
 
       - name: Install dependencies
         run: ${{ steps.detect-package-manager.outputs.manager }} ${{ steps.detect-package-manager.outputs.command }}
 
-      - name: d1
-        env:
-          GHW: ${{ github.workspace }}
-        run: |
-          pwd && ls -la && ls $GHW
+      - name: ls node modules
+        run: pwd && ls node_modules
 
       - name: Static HTML export with Nuxt
-        run: ${{ steps.detect-package-manager.outputs.manager }} run generate
+        run: pwd && ${{ steps.detect-package-manager.outputs.manager }} run generate
         working-directory: "webapp/awesomer"
 
       - name: d2
         env:
           GHW: ${{ github.workspace }}
         run: |
-          pwd && ls -la && ls $GHW
+          pwd && ls -la && ls dist
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
