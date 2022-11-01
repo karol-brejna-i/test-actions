@@ -91,6 +91,12 @@ jobs:
         run: |
           pwd && ls -la && cat nuxt.config.js
 
+      - name: n3
+        env:
+          GHW: ${{ github.workspace }}
+        run: |
+          pwd && echo $GITHUB_WORKSPACE && ls -la $GITHUB_WORKSPACE
+
       # - name: Restore cache
       #   uses: actions/cache@v3
       #   with:

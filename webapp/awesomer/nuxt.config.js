@@ -48,25 +48,6 @@ export default {
     },
 
     // Build Configuration: https://go.nuxtjs.dev/config-build
-    build: {},
+    build: {}
 
-    // ADDED FOR GH PAGES:
-    // router: {
-    //     base: '/test-actions/'
-    // }
-
-    // # XXX NOTE: hardcoded repo name;
-    // #Try github.event.repository.name
-
-    // it mey be even better:
-    /*
-          - name: Setup Pages
-        uses: actions/configure-pages@v2
-        with:
-          # Automatically inject router.base in your Nuxt configuration file and set
-          # target to static (https://nuxtjs.org/docs/configuration-glossary/configuration-target/).
-          #
-          # You may remove this line if you want to manage the configuration yourself.
-          static_site_generator: nuxt
-          */
 }
