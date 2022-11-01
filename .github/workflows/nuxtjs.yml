@@ -76,14 +76,15 @@ jobs:
         run: |
           pwd && ls -la && cat nuxt.config.js
 
-      - name: Setup Pages
-        uses: actions/configure-pages@v2
-        with:
-          # NOTE: by default, this little jerk works in GITHUB_WORKSPACE directory and does not take into account working-directory setting.
-          # If you nuxt project is in different directory (subdirectory), it will end up with creating a new blank config in GITHUB_WORKSPACE...
-          # You need to use configurationFile parameter
-          static_site_generator: nuxt
-          generator_config_file: webapp/awesomer/nuxt.config.js
+      # - name: Setup Pages
+      #   uses: actions/configure-pages@v2
+      #   with:
+      #     # NOTE: by default, this little jerk works in GITHUB_WORKSPACE directory and does not take into account working-directory setting.
+      #     # If you nuxt project is in different directory (subdirectory), it will end up with creating a new blank config in GITHUB_WORKSPACE...
+      #     # You need to use configurationFile parameter
+      #     static_site_generator: nuxt
+      #     generator_config_file: webapp/awesomer/nuxt.config.js
+      #     # still, the injected values (router.base) is not used (see dist/*.html)
 
       - name: n2
         env:
