@@ -83,7 +83,7 @@ jobs:
           # If you nuxt project is in different directory (subdirectory), it will end up with creating a new blank config in GITHUB_WORKSPACE...
           # You need to use configurationFile parameter
           static_site_generator: nuxt
-          configurationFile: ./webapp/awesomer/nuxt.config.js
+          generator_config_file: webapp/awesomer/nuxt.config.js
 
       - name: n2
         env:
