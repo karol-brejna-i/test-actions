@@ -43,3 +43,9 @@ List with sub-items would take more space, but there is a chance it is more read
 I am starting to think, that headers and text format and table format are not very useful for a this kind of makrdown document. On the other hand, they may be easier to parse (in case I would like to get the data from the list and inject new information/metadata). I won't investigate them here any further.
 
 Maybe those kind of rich formatting is better suited for an web app that would present the information (plus additional data) and allow for searching, sorting, etc.
+
+On The other hand, list format allows for a very brief description only. No images, no quotes, no lists or other markdown elements. 
+If there is a need for some more "sophisticated" descriptions, the format with headers would be a way to go. 
+
+
+
