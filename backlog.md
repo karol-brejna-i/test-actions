@@ -70,9 +70,40 @@ zmullett/connectiq-sonos: A Garmin Connect IQ watch widget that controls Sonos s
 
 ## not decided yet
 
+[desyat/OpenWeatherMapWidget](https://github.com/desyat/OpenWeatherMapWidget) Hi, here is another Open Source app - Open Weather Widget:
+- App Store: https://apps.garmin.com/en-US/apps/1f3f2d10-ac05-4a9b-a8fa-bdeac8775793
+- Image/App Icon (those could be extracted from the app store): https://forums.garmin.com/resized-image/__size/320x240/__key/communityserver-discussions-components-files/12/owm.png
+- Techniques:
+  - Background web requests (OWM API)
+  - Online web requests
+  - Open Weather Map API usage example
+  - Glance view for widgets
+    - Looks good
+
+[noln/doughnuts-burnt](https://github.com/noln/doughnuts-burnt) [Watch App]
+    A simple Garmin Connect IQ app for the Fenix 5X fitness GPS watch that shows the number of doughnuts burnt so far today. 
+    Pretty old: Dec 3, 2017
+    Based on Eclipse.
+    Source code mangled: random spaces, no comments, strange line breaks.
+    The idea is interesting, but the code is not.
+    https://developer.garmin.com/connect-iq/api-docs/Toybox/ActivityMonitor/Info.html
+    Probably candidate for "rejected".
+
+
+[BodyFatControl/garmin-connectiq-linux](https://github.com/BodyFatControl/garmin-connectiq-linux)
+    At the first glance, this looks like a copy of examples delivered by Garmin.
+    `Copyright 2015-2016 by Garmin Ltd. or its subsidiaries.`
+
+[Tamarpe/CatFacts](https://github.com/Tamarpe/CatFacts) [Widget] A garmin widget that generates cat facts to your watch
+    A garmin widget that generates cat facts to your watch!
+    App store: https://apps.garmin.com/en-US/apps/27d0219d-b256-4f15-9eb1-8e3604003e35
+    on Oct 23, 2019
+    Quite to the point. Main features: `Communications.makeWebRequest(); dc.drawBitmap();  dc.drawText()`
+    Note: The app store says it is a widget; source code shows it is an app -- verify
+
+
 arquicanedo/barbecueboss: Barbecue ConnectIQ App for Garmin Devices: https://github.com/arquicanedo/barbecueboss
 
-BodyFatControl/garmin-connectiq-linux: https://github.com/BodyFatControl/garmin-connectiq-linux
 
 danielsiwiec/tabataTimer: A tabata timer for garmin watches: https://github.com/danielsiwiec/tabataTimer
 
@@ -88,19 +119,20 @@ IrishMarineInstitute/connectiq-ido: An Integrated Digital Ocean app on the Conne
 
 jravey7/CIQChecklist: Create executable checklists for Garmin smart watches using your phone: https://github.com/jravey7/CIQChecklist
 
-mauriciogior/garmin-hackathon: https://github.com/mauriciogior/garmin-hackathon
+mauriciogior/garmin-hackathon: https://github.com/mauriciogior/garmin-hackathon -- app and companion app; old: Nov 15, 2014
+
 
 mikkosh/AntAssetTracker: AntAssetTracker ConnectIQ module for communicating with devices supporting Ant Asset Tracker profile such as Garmin Astro or other Dog trackers.: https://github.com/mikkosh/AntAssetTracker
 
-mikkosh/Ballistics: Ballistics is a bullet ballistic calculator application built with Connect IQ for Garmin devices: https://github.com/mikkosh/Ballistics
 
-noln/doughnuts-burnt: A simple Garmin Connect IQ app for the Fenix 5X fitness GPS watch that shows the number of doughnuts burnt so far today.: https://github.com/noln/doughnuts-burnt
+mikkosh/Ballistics: Ballistics is a bullet ballistic calculator application built with Connect IQ for Garmin devices: 
 
-Tamarpe/CatFacts: A garmin widget that generates cat facts to your watch: https://github.com/Tamarpe/CatFacts
 
 ToryStark/connect-iq: https://github.com/ToryStark/connect-iq
 
-vovan-/swimmer-datafiled-garmin: Swimmer datafiled for Garmin Connect IQ store.: https://github.com/vovan-/swimmer-datafiled-garmin
+
+[vovan-/swimmer-datafiled-garmin](https://github.com/vovan-/swimmer-datafiled-garmin) [Data Field] Updated SwimmersField Data Filed for Garmin Connect IQ store. This is a free complex Data Field for the Fenix 3 watch that shows multiple values in a single field layout.
+Techniques: Wide custom font
 
 ## Tutorials
 
