@@ -51,6 +51,15 @@ body:
     - label: I have searched the existing issues
       required: true
 
+  - type: textarea
+    id: summary
+    attributes:
+      label: Justification
+      description: Include some summary, why the project should be accepted/rejected.
+      placeholder: Tell us what you think!
+      value: "..."
+    validations:
+      required: true
 
 
 
