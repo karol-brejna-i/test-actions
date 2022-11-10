@@ -29,3 +29,10 @@ jobs:
           git diff origin/main..HEAD > mydiff
           echo "mydiff = "
           cat mydiff
+      - name: print-diff-added-lines-only
+        shell: bash
+        run: |
+          git fetch origin main
+          git diff --diff-filter=A origin/main..HEAD > mydiff
+          echo "mydiff(adds) = "
+          cat mydiff
