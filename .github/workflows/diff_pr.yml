@@ -26,6 +26,13 @@ jobs:
         shell: bash
         run: |
           git fetch origin main
-          git diff origin/main..HEAD > mydiff
+          git diff origin/main..HEAD -U0 > mydiff
           echo "mydiff = "
+          cat mydiff
+      - name: print-diff-added-lines-only
+        shell: bash
+        run: |
+          git fetch origin main
+           git diff --color=always origin/main..HEAD README.md | perl -wlne 'print $1 if /^\e\[32m\+\e\[m\e\[32m(.*)\e\[m$/' > mydiff
+          echo "mydiff(adds) = "
           cat mydiff
