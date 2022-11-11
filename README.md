@@ -5,6 +5,7 @@ A curated list of awesome [Garmin Connect IQ](https://developer.garmin.com/conne
 Inspired by [other awesome projects](https://github.com/sindresorhus/awesome). Especially by https://github.com/manuzhang/awesome-streaming.
 
 ## Website
+
 [https://fun-with-garmin-development.github.io/awesome-connect-iq/](https://fun-with-garmin-development.github.io/awesome-connect-iq) is a more dynamic website where you can find **updates** of the awesome projects here.
 
 ## Table of Contents
@@ -13,14 +14,11 @@ Inspired by [other awesome projects](https://github.com/sindresorhus/awesome). E
 - Barrels/libraries
 - Projects (App, Watch Face, ...)
 - Misc
-- Contributing
-  - How to add a new project
-  - How to add a new resource
-- I've just added a line
-# Tutorials/articles/podcasts
 
-# Barrels/libraries
-afdsafads
-# Projects
+## Tutorials/articles/podcasts
 
-# Misc
+## Barrels/libraries
+
+## Projects
+
+## Misc
