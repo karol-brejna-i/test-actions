@@ -33,6 +33,6 @@ jobs:
         shell: bash
         run: |
           git fetch origin main
-          git diff --diff-filter=A origin/main..HEAD > mydiff
+           git diff --color=always origin/main..HEAD README.md | perl -wlne 'print $1 if /^\e\[32m\+\e\[m\e\[32m(.*)\e\[m$/' > mydiff
           echo "mydiff(adds) = "
           cat mydiff
