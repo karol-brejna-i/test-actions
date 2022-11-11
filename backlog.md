@@ -1,10 +1,10 @@
 
-[Badminton Score Tracker](https://apps.garmin.com/pl-PL/apps/51606451-57e2-4f99-9420-2ba5a80b5df6) [GitHub - matco/badminton at dev](https://github.com/matco/badminton/tree/dev.) May be good. Quite fresh. "- "Save matches as Garmin Connect activities" - could be good example for saving custom activities.  
+[Badminton Score Tracker](https://apps.garmin.com/pl-PL/apps/51606451-57e2-4f99-9420-2ba5a80b5df6) [GitHub - matco/badminton at dev](https://github.com/matco/badminton/tree/dev.) May be good. Quite fresh. "- "Save matches as Garmin Connect activities" - could be good example for saving custom activities.
 
-[GitHub - rgibert/garmin-podcasts: Garmin Podcasts is a Garmin Connect IQ podcast app powered by Podcast Index. No external service or subscription required: all you need is you watch!](https://github.com/rgibert/garmin-podcasts) 
+[GitHub - rgibert/garmin-podcasts: Garmin Podcasts is a Garmin Connect IQ podcast app powered by Podcast Index. No external service or subscription required: all you need is you watch!](https://github.com/rgibert/garmin-podcasts)
 An example of audio content provider app. Look very solid. Good user's docs.
 
-[GitHub - xehpuk/parkrun-barcode-garmin-connect-iq: Never forget your barcode again!](https://github.com/xehpuk/parkrun-barcode-garmin-connect-iq) 
+[GitHub - xehpuk/parkrun-barcode-garmin-connect-iq: Never forget your barcode again!](https://github.com/xehpuk/parkrun-barcode-garmin-connect-iq)
 Doesn't do much, but it looks nice. Contains a glance view.
 
 [GitHub - danielsiwiec/timebomb: Timebomb game for garmin](https://github.com/danielsiwiec/timebomb). Looks like a game. Had not run it yet. The code seems clean. There is even a model passd to the delegate. Don't expect sofisticated mechanics/techniques, though.
@@ -78,10 +78,10 @@ zmullett/connectiq-sonos: A Garmin Connect IQ watch widget that controls Sonos s
   - Online web requests
   - Open Weather Map API usage example
   - Glance view for widgets
-    - Looks good
+- Looks good
 
 [noln/doughnuts-burnt](https://github.com/noln/doughnuts-burnt) [Watch App]
-    A simple Garmin Connect IQ app for the Fenix 5X fitness GPS watch that shows the number of doughnuts burnt so far today. 
+    A simple Garmin Connect IQ app for the Fenix 5X fitness GPS watch that shows the number of doughnuts burnt so far today.
     Pretty old: Dec 3, 2017
     Based on Eclipse.
     Source code mangled: random spaces, no comments, strange line breaks.
@@ -125,7 +125,7 @@ mauriciogior/garmin-hackathon: https://github.com/mauriciogior/garmin-hackathon 
 mikkosh/AntAssetTracker: AntAssetTracker ConnectIQ module for communicating with devices supporting Ant Asset Tracker profile such as Garmin Astro or other Dog trackers.: https://github.com/mikkosh/AntAssetTracker
 
 
-mikkosh/Ballistics: Ballistics is a bullet ballistic calculator application built with Connect IQ for Garmin devices: 
+mikkosh/Ballistics: Ballistics is a bullet ballistic calculator application built with Connect IQ for Garmin devices:
 
 
 ToryStark/connect-iq: https://github.com/ToryStark/connect-iq
