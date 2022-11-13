@@ -6,6 +6,7 @@ on:
     types: [opened]
     paths:
       - 'README.md'
+  workflow_dispatch:
 
 jobs:
   Job1:
@@ -20,11 +21,6 @@ jobs:
           echo "----------------- xhost:"
           if xhost >& /dev/null ; then echo "Display exists"
           else echo "Display invalid" ; fi
-      - name: dm
-        run: |
-          echo "----------------- display-manager:"
-          # systemctl status display-manager
-          echo "no display manager
       - name: chrome
         run: |
           google-chrome https://wp.pl
