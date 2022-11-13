@@ -13,6 +13,21 @@ jobs:
     env:
       PR_AUTHOR_GITHUB_ID: ${{ github.event.pull_request.user.login }}
     steps:
+      - name: Envs
+        run: |
+          echo "----------------- envs:"
+          env
+          echo "----------------- xhost:"
+          if xhost >& /dev/null ; then echo "Display exists"
+          else echo "Display invalid" ; fi
+      - name: dm
+        run: |
+          echo "----------------- display-manager:"
+          # systemctl status display-manager
+          echo "no display manager
+      - name: chrome
+        run: |
+          google-chrome https://wp.pl
       - name: Find Github id of PR AUTHOR
         run: |
           echo "PR author: ${PR_AUTHOR_GITHUB_ID}"
