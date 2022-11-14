@@ -25,7 +25,7 @@ Inspired by [other awesome projects](https://github.com/sindresorhus/awesome). E
     <!-- author: karol-brejna-i; issue: xxx -->
   - Category: Widget
   - Description: Open source code for Garmin Widget connecting to Open Weather Map.
-  - 🇮🇶🛒 <https://apps.garmin.com/en-US/apps/1f3f2d10-ac05-4a9b-a8fa-bdeac8775793>
+  - :iraq:🛒 <https://apps.garmin.com/en-US/apps/1f3f2d10-ac05-4a9b-a8fa-bdeac8775793>
   - Techniques:
     - Background web requests (OWM API)
     - Online web requests
