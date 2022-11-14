@@ -21,4 +21,8 @@ Inspired by [other awesome projects](https://github.com/sindresorhus/awesome). E
 
 ## Projects
 
+- item 1
+  - subitem 1
+  - subitem 2
+
 ## Misc
