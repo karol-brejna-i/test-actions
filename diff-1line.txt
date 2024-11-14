@@ -1,0 +1,6 @@
+diff --git a/test.txt b/test.txt
+index fc5994f..9162a27 100644
+--- a/test.txt
++++ b/test.txt
+@@ -6,0 +7 @@ new line with se 5 d
++new line with se 5 d

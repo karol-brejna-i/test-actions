@@ -1,0 +1,8 @@
+mkdir test
+cd test
+git init
+echo -e "line1\nline2\nline3" > test.txt
+cat test.txt
+git add .
+sed -i '2i new line with sed' test.txt
+git diff -U0
